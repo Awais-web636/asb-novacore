@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+
+/* Hide default cursor on desktop */
+@media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+
+  /* Show default cursor on mobile devices */
+  @media (hover: none) and (pointer: coarse) {
+    * {
+      cursor: auto !important;
+    }
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #06b6d4, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #0891b2, #7c3aed);
+}
