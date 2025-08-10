@@ -1,6 +1,6 @@
 import React from 'react';
 import { Globe, Smartphone, WholeWord as Wordpress, Palette, ArrowRight, CheckCircle } from 'lucide-react';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Services = () => {

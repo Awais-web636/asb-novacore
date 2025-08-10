@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Filter } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
-
+import { motion } from 'framer-motion';
 const Portfolio = () => {
   const [filter, setFilter] = useState('all');
 

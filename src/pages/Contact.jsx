@@ -361,7 +361,7 @@
 
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Linkedin, Clock } from 'lucide-react';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
 
