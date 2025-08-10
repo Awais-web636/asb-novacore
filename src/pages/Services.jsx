@@ -1,6 +1,6 @@
 import React from 'react';
 import { Globe, Smartphone, WholeWord as Wordpress, Palette, ArrowRight, CheckCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -75,10 +75,10 @@ const Services = () => {
                 <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${service.color} text-white mb-6`}>
                   {service.icon}
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
                 <p className="text-gray-300 mb-6">{service.description}</p>
-                
+
                 <ul className="space-y-3 mb-8">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-gray-300">
@@ -87,7 +87,7 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                
+
                 <Link
                   to="/contact"
                   className={`inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r ${service.color} text-white font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 cursor-pointer`}
@@ -136,7 +136,7 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">{phase.title}</h3>
                 <p className="text-gray-300">{phase.description}</p>
-                
+
                 {index < 3 && (
                   <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-cyan-500 to-purple-600 opacity-30"></div>
                 )}
